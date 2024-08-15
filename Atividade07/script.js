@@ -35,3 +35,19 @@
 // alert(`O número de dígitos é: ${count}`);
 
 // 5 - Exibir Números de Fibonacci
+
+const quantidadeNumeros = parseInt(prompt("Digite quantos números deseja ver: "));
+
+// Declarando variaveis
+let numero01 = 0;
+let numero02 = 1;
+
+// Estrutura de repetição
+
+for (let i = 0; i < quantidadeNumeros; i++) {
+    console.log(numero01);
+
+    const proximoNumero = numero01 + numero02;
+    numero01 = numero02;
+    numero02 = proximoNumero;
+}
